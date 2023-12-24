@@ -13,21 +13,89 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    
+    body{
+      background-color: hsl(47, 88%, 63%);
+      font-family: 'Figtree', sans-serif;;
+    }
+
+    #main-container{
+      position: relative;
+      background-color: white;
+      height: 600px;
+      width: 400px;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 10px;
+      box-shadow: 10px 10px 5px hsl(0, 0%, 7%);
+    }
+
+    #container{
+      margin: 20px;
+      position: absolute;
+    }
+
+    #header{
+      border-radius: 5px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 15px;
+      size: 40%;
+    }
+
+    #content{
+      margin-left: 10px;
+    }
+
+    #topic{
+      display: inline-block;
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 5px;
+      padding: 5px;
+      margin: 15px 0 0 0;
+    }
+
+    #bla{
+      color: hsl(0, 0%, 50%);
+    }
+
+    #avatar{
+      position: relative;
+    }
+
+    #author{
+      position: absolute;
+      display: inline-block;
+      margin-left: 10px;
+    }
+
+    .attribution{
+      text-align: center;
+      margin-top: 5px;
+    }
+
   </style>
 </head>
 <body>
 
-    <div id="container">
+    <div id="main-container">
 
-      <img id="header" src="assets\images\illustration-article.svg" alt="an image">
-      <h3 id="topic">Learning</h3>
-      <p>Published 21 Dec 2023</p>
-      <h1>HTML & CSS foundations</h1>
-      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-      <img id="avatar" src="assets\images\image-avatar.webp" alt="an avatar">
-      <h3 id="author">Greg Hooper</h3>
-      
+      <div id="container">
+
+        <img id="header" src="assets\images\illustration-article.svg" alt="an image">
+        <div id="content">
+          
+          <h3 id="topic">Learning</h3>
+          <p>Published 21 Dec 2023</p>
+          <h2>HTML & CSS foundations</h2>
+          <p id="bla">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          <img id="avatar" src="assets\images\image-avatar.webp" alt="an avatar">
+          <h3 id="author">Greg Hooper</h3>
+          
+        </div>
+        
+      </div>
+        
     </div>
   
   <div class="attribution">
